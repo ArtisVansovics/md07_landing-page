@@ -3,7 +3,6 @@
   flex-flow: column;
   align-items: center;
   width: 100%;
-  padding: 0 12%;
 }
 
 .container {
@@ -14,6 +13,11 @@
 
 .container--navbar {
   padding-top: 30px;
+}
+
+.container--header {
+  background: #F0C53E;
+  padding: 1% 5%;
 }
 
 .nav {
