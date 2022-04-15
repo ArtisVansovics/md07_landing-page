@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+@import "cssReset.scss", "flexboxgrid.scss", "layout.scss", "text-styles.scss",
+"media-queries.scss";
+
 body {
-  background-color: antiquewhite;
+  max-width: 1930px;
+  font-family: 'Heebo', sans-serif;
 }
