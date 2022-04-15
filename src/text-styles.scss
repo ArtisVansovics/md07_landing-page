@@ -21,6 +21,31 @@
   color: #2C2D32;
 }
 
+.title--small {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.title--large {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+}
+
+.title--main {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+}
+
+.title--text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #464646;
+}
+
 .header {
   font-weight: 500;
   font-size: 36px;
@@ -71,8 +96,17 @@
   color: #696984;
 }
 
-.letter-spacing {
+.text--large {
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.letter-spacing--small {
   letter-spacing: 0.02em;
+}
+
+.letter-spacing--large {
+  letter-spacing: 0.2em;
 }
 
 .align-text--left {
@@ -82,3 +116,4 @@
 .red-lettering {
   color: #7F2736;
 }
+

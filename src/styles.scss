@@ -8,6 +8,8 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  vertical-align: middle;
   font-weight: 500;
   font-size: 22px;
   line-height: 33px;
@@ -17,6 +19,7 @@ body {
   border-radius: 80px;
   border: none;
   padding: 24px 40px;
+  max-height: 80px;
 }
 
 .btn--light {
@@ -25,4 +28,9 @@ body {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   padding: 24px 60px;
+}
+
+.btn__logo {
+  display: inline-block;
+  vertical-align: middle;
 }
