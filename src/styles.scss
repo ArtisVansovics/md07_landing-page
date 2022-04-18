@@ -38,6 +38,25 @@ body {
   padding: 12px 40px;
 }
 
+.btn--yellow {
+  background: #F0C53E;
+  font-size: 20px;
+  line-height: 36px;
+  color: #2C2D32;
+  padding: 2px 35px;
+}
+
+.btn--image {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  padding: 4px 12px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
 .btn__logo {
   display: inline-block;
   vertical-align: middle;

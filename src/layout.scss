@@ -71,6 +71,12 @@
   height: 400px;
 }
 
+.box--image {
+  position: relative;
+  align-items: flex-end;
+  //max-width: 280px;
+}
+
 .box--card {
   background: #FFFFFF;
   box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
