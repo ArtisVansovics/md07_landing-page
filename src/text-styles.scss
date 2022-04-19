@@ -1,6 +1,7 @@
 .nav {
   display: inline-flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
 
 .nav--footer {
@@ -177,6 +178,10 @@
 
 .align-text--left {
   text-align: left;
+}
+
+.bold-text {
+  font-weight: 600;
 }
 
 .red-lettering {

@@ -12,12 +12,19 @@
 }
 
 .container--navbar {
-  padding-top: 30px;
+  padding-top: 1%;
+  margin-bottom: 5%;
 }
 
 .container--header {
   background: #F0C53E;
   padding: 1% 5%;
+}
+
+.container--round-bottom {
+  padding-bottom: 5%;
+  border-bottom-left-radius: 100% 200%;
+  border-bottom-right-radius: 100% 200%;
 }
 
 .container--center {
@@ -146,12 +153,20 @@
   border-radius: 20px;
 }
 
+.row-flex {
+  flex-flow: row wrap;
+}
+
 .align-start {
   align-items: flex-start;
 }
 
 .align-centered {
   align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
 }
 
 .margin-bottom--small {
