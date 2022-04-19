@@ -22,7 +22,8 @@
 }
 
 .container--round-bottom {
-  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
   border-bottom-left-radius: 100% 200%;
   border-bottom-right-radius: 100% 200%;
 }
@@ -200,6 +201,20 @@
 
 .gap-large {
   gap: 50px;
+}
+
+.right-padding-small {
+  padding-right: 60px;
+}
+
+.right-padding-large {
+  padding-right: 120px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
 }
 
 .input {
