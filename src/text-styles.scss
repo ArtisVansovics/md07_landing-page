@@ -1,9 +1,27 @@
+.nav {
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+
+.nav--footer {
+  gap: 10px;
+}
+
 .nav__link {
   font-size: 22px;
   line-height: 33px;
   letter-spacing: 0.02em;
   color: #252641;
   text-decoration: none;
+}
+
+.nav__link--footer {
+  letter-spacing: 0.04em;
+  color: #A7283E;
+}
+
+.nav--footer .nav__link--footer:not(:last-child):after {
+  content: " | ";
 }
 
 .link {
@@ -103,6 +121,14 @@
   line-height: 79px;
 }
 
+.header--footer {
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: #F0C53E;
+  margin-bottom: 60px;
+}
+
 .header--white {
   font-weight: 600;
   font-size: 32px;
@@ -131,6 +157,14 @@
 .text--large {
   font-size: 26px;
   line-height: 42px;
+}
+
+.text--footer {
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #A7283E;
 }
 
 .letter-spacing--small {

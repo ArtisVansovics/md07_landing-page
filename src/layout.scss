@@ -25,6 +25,11 @@
   padding: 0 10%;
 }
 
+.container--footer {
+  background: #7F2736;
+  padding: 54px 5% 40px;
+}
+
 .container--slim {
   padding: 0 15%;
 }
@@ -75,6 +80,10 @@
   position: relative;
   align-items: flex-end;
   //max-width: 280px;
+}
+
+.box--small-card {
+  min-width: 185px;
 }
 
 .box--card {
@@ -161,6 +170,10 @@
   margin-bottom: 170px;
 }
 
+.gap--small {
+  gap: 20px;
+}
+
 .gap-average {
   gap: 30px;
 }
@@ -171,4 +184,28 @@
 
 .gap-large {
   gap: 50px;
+}
+
+.input {
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #F0C53E;
+  border-radius: 80px;
+  padding: 15px 30px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.input__list {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding: 20px 0 0 30px;
+  margin: 0;
+  min-height: 150px;
 }
