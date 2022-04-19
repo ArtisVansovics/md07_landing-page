@@ -217,6 +217,15 @@
   gap: 20px;
 }
 
+.form--red {
+  position: relative;
+}
+
+.label {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .input {
   box-sizing: border-box;
   background: none;
@@ -227,6 +236,22 @@
   line-height: 30px;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+}
+
+.input--red {
+  max-width: 450px;
+  max-height: 80px;
+  background-color: transparent;
+  border: 1px solid #EE5060;
+  padding: 22px 60px;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  color: #EE5060;
+}
+
+.input--red::placeholder {
+  opacity: 1;
 }
 
 .input__list {
