@@ -14,6 +14,12 @@
   letter-spacing: 0.02em;
   color: #252641;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #A7283E;
+  text-decoration: underline;
 }
 
 .nav__link--footer {
@@ -21,8 +27,13 @@
   color: #A7283E;
 }
 
+.nav__link--footer:hover {
+  color: #F0C53E;
+}
+
 .nav--footer .nav__link--footer:not(:last-child):after {
   content: " | ";
+  color: #A7283E;
 }
 
 .link {
@@ -30,6 +41,11 @@
   line-height: 40px;
   text-decoration-line: underline;
   color: #EE5060;
+}
+
+.link:hover {
+  color: #2C2D32;
+  text-decoration: none;
 }
 
 .link--small {

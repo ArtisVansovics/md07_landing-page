@@ -3,7 +3,7 @@ const footerColors = ['#7F2736', '#578034', '#1B8067', '#772180', '#1B6180'];
 
 const navEl = document.querySelector<HTMLElement>('.nav--header');
 const toastEl = document.querySelector<HTMLDivElement>('.toast');
-const footertEl = document.querySelector<HTMLDivElement>('.container--footer');
+const footerEl = document.querySelector<HTMLDivElement>('.container--footer');
 const inputEmailEl = document.querySelector<HTMLInputElement>('#emailAddress');
 const inputListEl = document.querySelector<HTMLUListElement>('.input-list');
 
@@ -50,7 +50,7 @@ const chooseName = () => {
 };
 
 inputEmailEl.addEventListener('input', () => {
-  footertEl.style.backgroundColor = chooseName();
+  footerEl.style.backgroundColor = chooseName();
 });
 
 // When 'Watch how it works' button is clicked, a toaster appears
