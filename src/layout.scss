@@ -74,21 +74,23 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
+  //margin: 20px;
 }
 
 .box--rectangle {
-  position: relative;
   z-index: 0;
   justify-content: center;
   align-items: center;
   max-width: 600px;
   height: 400px;
+  margin: 20px;
 }
 
 .box--image {
   position: relative;
   align-items: flex-end;
-  //max-width: 280px;
+  min-width: 310px;
+  min-height: 220px;
 }
 
 .box--small-card {
@@ -103,6 +105,7 @@
   gap: 70px;
   position: relative;
   z-index: 0;
+  margin-top: 40px;
 }
 
 .box--card__logo {
@@ -213,6 +216,10 @@
 
 .gap-large {
   gap: 50px;
+}
+
+.right-padding-tiny {
+  padding-right: 30px;
 }
 
 .right-padding-small {
