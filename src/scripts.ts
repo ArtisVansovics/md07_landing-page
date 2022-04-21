@@ -1,8 +1,10 @@
 const headerNavLinks = ['Home', 'Events', 'About', 'Blog', 'Contact'];
 
 const navEl = document.querySelector<HTMLElement>('.nav--header');
+const toastEl = document.querySelector<HTMLDivElement>('.toast');
 const inputEmailEl = document.querySelector<HTMLInputElement>('#emailAddress');
 const inputListEl = document.querySelector<HTMLUListElement>('.input-list');
+const toastBtnEl = document.querySelector<HTMLButtonElement>('.btn--toast');
 const subscribeBtnEl = document.querySelector<HTMLButtonElement>('.btn--sub');
 
 // const slideshowSlidesEl = document.querySelectorAll<HTMLLinkElement>('.slideshow__slide');
@@ -33,6 +35,12 @@ subscribeBtnEl.addEventListener('click', (e) => {
 
   inputListEl.appendChild(newListEl);
   inputEmailEl.value = '';
+});
+
+// When 'Watch how it works' button is clicked, a toaster appears
+
+toastBtnEl.addEventListener('click', () => {
+  toastEl.style.display = 'block';
 });
 
 // Slideshow
