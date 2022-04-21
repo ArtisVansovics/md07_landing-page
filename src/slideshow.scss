@@ -1,0 +1,17 @@
+.slide-button {
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.slide-button:hover {
+  background: #F0C53E;
+}
+
+.slide-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//.slideshow {
+//  flex-wrap: nowrap;
+//}

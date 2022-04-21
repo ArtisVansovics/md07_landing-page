@@ -1,17 +1,20 @@
-// small screens
-@media only screen and (max-width: 768px) {
- .nav--header {
+// extra-small screens
+@media only screen and (max-width: 778px) {
+  .nav--header {
    flex-direction: column;
    gap: 10px;
- }
+  }
+}
+
+// small screens
+@media only screen and (max-width: 1030px) {
+  .slide-button {
+    transform: rotate(0.25turn);
+    margin: 10px;
+  }
 }
 
 // medium screens
-@media only screen and (max-width: 1024px) {
-
-}
-
-// large screens
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1190px) {
 
 }
