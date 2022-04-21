@@ -1,9 +1,12 @@
 const headerNavLinks = ['Home', 'Events', 'About', 'Blog', 'Contact'];
+const footerColors = ['#7F2736', '#578034', '#1B8067', '#772180', '#1B6180'];
 
 const navEl = document.querySelector<HTMLElement>('.nav--header');
 const toastEl = document.querySelector<HTMLDivElement>('.toast');
+const footertEl = document.querySelector<HTMLDivElement>('.container--footer');
 const inputEmailEl = document.querySelector<HTMLInputElement>('#emailAddress');
 const inputListEl = document.querySelector<HTMLUListElement>('.input-list');
+
 const toastBtnEl = document.querySelector<HTMLButtonElement>('.btn--toast');
 const subscribeBtnEl = document.querySelector<HTMLButtonElement>('.btn--sub');
 
@@ -35,6 +38,19 @@ subscribeBtnEl.addEventListener('click', (e) => {
 
   inputListEl.appendChild(newListEl);
   inputEmailEl.value = '';
+});
+
+// When typing into the email input field, footer background changes to a random color
+
+const chooseName = () => {
+  const num = Math.floor(Math.random() * footerColors.length - 4);
+  const colorBg = footerColors.splice(num, 1);
+  footerColors.push(...colorBg);
+  return colorBg.join();
+};
+
+inputEmailEl.addEventListener('input', () => {
+  footertEl.style.backgroundColor = chooseName();
 });
 
 // When 'Watch how it works' button is clicked, a toaster appears

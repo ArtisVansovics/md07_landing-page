@@ -22,17 +22,6 @@
   position: relative;
 }
 
-.toast {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #7F2736;
-  max-width: 600px;
-  padding: 20px;
-  border-bottom-left-radius: 10% 20%;
-}
-
 .container--round-bottom {
   padding-top: 5%;
   padding-bottom: 2%;
@@ -165,6 +154,17 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
+}
+
+.toast {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #7F2736;
+  max-width: 600px;
+  padding: 20px;
+  border-bottom-left-radius: 10% 20%;
 }
 
 .row-flex {
