@@ -13,12 +13,23 @@
     transform: rotate(0.25turn);
     margin: 10px;
   }
+
   .box {
     padding-top: 40px;
   }
+
   .gap-responsive {
     gap: 70px;
   }
+
+  .img--slide {
+    max-width: 300px;
+  }
+
+  .gap-average {
+    gap: 16px;
+  }
+
 }
 
 // medium screens

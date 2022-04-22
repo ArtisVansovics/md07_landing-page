@@ -10,9 +10,9 @@ const inputListEl = document.querySelector<HTMLUListElement>('.input-list');
 const toastBtnEl = document.querySelector<HTMLButtonElement>('.btn--toast');
 const subscribeBtnEl = document.querySelector<HTMLButtonElement>('.btn--sub');
 
-// const slideshowSlidesEl = document.querySelectorAll<HTMLLinkElement>('.slideshow__slide');
-// const slidePrevEl = document.querySelector<HTMLLinkElement>('.slide-button--prev');
-// const slideNextEl = document.querySelector<HTMLLinkElement>('.slide-button--next');
+const slideshowSlidesEl = document.querySelectorAll<HTMLLinkElement>('.slideShow__slide');
+const slidePrevEl = document.querySelector<HTMLLinkElement>('.slide-button--prev');
+const slideNextEl = document.querySelector<HTMLLinkElement>('.slide-button--next');
 
 // Load header nav-links on page load
 
@@ -60,41 +60,30 @@ toastBtnEl.addEventListener('click', () => {
 });
 
 // Slideshow
+let slideIndex = 0;
 
-// const slideIndex = 0;
+const slideLen = slideshowSlidesEl.length - 1;
 
-// slideshowSlidesEl[3].style.display = 'none';
+const slideToggle = () => {
+  slideshowSlidesEl.forEach((slideshowSlide, i) => {
+    if (i === slideIndex) {
+      slideshowSlide.classList.remove('hidden');
+    } else {
+      slideshowSlide.classList.add('hidden');
+    }
+  });
+};
 
-// slidePrevEl.addEventListener('click', () => {
-//
-// });
-//
-// slideNextEl.addEventListener('click', () => {
-//   current = 1;
-//   const slides = [...slideshowSlidesEl];
-//   const len = slides.length;
-//   const first = slides[0];
-//   const second = slides[1];
-//   const last = [2];
-// });
+slideNextEl.addEventListener('click', () => {
+  const endOfSlides = slideLen === slideIndex;
 
-// slideNextEl.addEventListener('click', () => {
-//   slideIndex += 1;
-//   if (slideIndex < slideshowSlidesEl.length) {
-//     slideshowSlidesEl[slideIndex].classList.add('last-xs');
-//   }
-// });
+  slideIndex = !endOfSlides ? slideIndex + 1 : 0;
+  slideToggle();
+});
 
-// slideNextEl.addEventListener('click', () => {
-//   slideIndex += 1;
-//   const slides = [...slideshowSlidesEl];
-//   if (slideIndex < slides.length) {
-//     slides.unshift();
-//   } else console.log('no');
-//   // slideIndex += 1;
-//   // if (slideIndex < slideshowSlidesEl.length) {
-//   //   headerNavLinks.unshift(headerNavLinks.pop());
-//   //   slideshowSlidesEl[slideIndex].style.display = 'none';
-//   //   slideshowSlidesEl[slideshowSlidesEl.length - 1].style.display = 'block';
-//   // } else console.log('no');
-// });
+slidePrevEl.addEventListener('click', () => {
+  const startOfSlides = slideIndex === 0;
+
+  slideIndex = startOfSlides ? slideLen : slideIndex - 1;
+  slideToggle();
+});

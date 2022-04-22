@@ -74,7 +74,10 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  //margin: 20px;
+}
+
+.box--slideshow {
+  align-items: stretch;
 }
 
 .box--rectangle {
@@ -132,10 +135,6 @@
   margin-right: auto;
   border: none;
   border-radius: 20px;
-}
-
-.img--slide {
-  max-width: 450px;
 }
 
 .img--bg {
