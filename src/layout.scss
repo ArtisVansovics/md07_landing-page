@@ -92,8 +92,9 @@
 .box--image {
   position: relative;
   align-items: flex-end;
-  min-width: 310px;
-  min-height: 220px;
+  height: auto;
+  //min-width: 310px;
+  //min-height: 220px;
 }
 
 .box--small-card {
@@ -241,7 +242,7 @@
 
 .label {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .input {

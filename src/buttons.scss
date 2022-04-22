@@ -100,14 +100,15 @@
 }
 
 .btn--image {
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.02em;
   padding: 4px 12px;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 6%;
+  bottom: 6%;
 }
 
 .btn--input {
