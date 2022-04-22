@@ -255,6 +255,9 @@
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
+.input:focus {
+  outline: 1px solid #F0C53E;
+}
 
 .input--red {
   max-width: 450px;
@@ -266,6 +269,10 @@
   line-height: 35px;
   letter-spacing: 0.02em;
   color: #EE5060;
+}
+
+.input:focus {
+  outline: 1px solid #EE5060;
 }
 
 .input--red::placeholder {

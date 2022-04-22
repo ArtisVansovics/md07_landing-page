@@ -4,11 +4,16 @@ const footerColors = ['#7F2736', '#578034', '#1B8067', '#772180', '#1B6180'];
 const navEl = document.querySelector<HTMLElement>('.nav--header');
 const toastEl = document.querySelector<HTMLDivElement>('.toast');
 const footerEl = document.querySelector<HTMLDivElement>('.container--footer');
+
 const inputEmailEl = document.querySelector<HTMLInputElement>('#emailAddress');
+const inputTextEl = document.querySelector<HTMLInputElement>('#writeThought');
+
 const inputListEl = document.querySelector<HTMLUListElement>('.input-list');
+const textContainerEl = document.querySelector<HTMLParagraphElement>('.text-container-js');
 
 const toastBtnEl = document.querySelector<HTMLButtonElement>('.btn--toast');
 const subscribeBtnEl = document.querySelector<HTMLButtonElement>('.btn--sub');
+const textInputBtnEl = document.querySelector<HTMLButtonElement>('.btn-red-js');
 
 const slideshowSlidesEl = document.querySelectorAll<HTMLLinkElement>('.slideShow__slide');
 const slidePrevEl = document.querySelector<HTMLLinkElement>('.slide-button--prev');
@@ -38,6 +43,15 @@ subscribeBtnEl.addEventListener('click', (e) => {
 
   inputListEl.appendChild(newListEl);
   inputEmailEl.value = '';
+});
+
+// Input of 'Write you thought' input field appears in the paragraph above it
+
+textInputBtnEl.addEventListener('click', (f) => {
+  f.preventDefault();
+  const fieldInput = inputTextEl.value;
+  textContainerEl.innerText += ` ${fieldInput}`;
+  inputTextEl.value = '';
 });
 
 // When typing into the email input field, footer background changes to a random color
