@@ -162,12 +162,13 @@
 .toast {
   display: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 1%;
+  top: 1%;
   background: #7F2736;
   max-width: 600px;
   padding: 20px;
-  border-bottom-left-radius: 10% 20%;
+  border-bottom-left-radius: 10% 30%;
+  border-top-right-radius: 10% 30%;
 }
 
 .row-flex {

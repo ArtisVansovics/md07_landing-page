@@ -71,6 +71,10 @@ inputEmailEl.addEventListener('input', () => {
 
 toastBtnEl.addEventListener('click', () => {
   toastEl.style.display = 'block';
+
+  setTimeout(() => {
+    toastEl.style.display = 'none';
+  }, 3500);
 });
 
 // Slideshow
